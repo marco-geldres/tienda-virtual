@@ -11,7 +11,7 @@
 <script type="text/javascript">
      /*la funcion recorre la url y va recorriendo y haciendo un split para obtener los datos que se enviaron desde alli y se agrega a los atributos con el name txt*/
     function obtenerData(){
-        alert("Hola");
+       // alert("Hola");
     if (location.search.length > 0){
     dataPassed = unescape(location.search.substring(1))
     tempArray1=dataPassed.split("&") 
@@ -20,6 +20,7 @@
     tempArray2=tempArray1[i].split("=") ;
     }
     document.getElementById('nombreCliente').innerHTML  = tempArray2;
+    document.getElementById('camponombre').innerHTML  = "Bienvenido";
     }
     }
 
@@ -49,7 +50,7 @@
     <main>
         <section id="inicio" class="inicio">
             <ul class="cliente">
-               <li>Nombre Cliente :</li>
+               <li><a  id="camponombre"></li>
                <li><a  id="nombreCliente">
 
                </a></li>
