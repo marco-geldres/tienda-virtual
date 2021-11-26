@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css"> 
+    <script type="text/javascript">
+        function enviarData(){
+        let vusuario = "mgeldrem";
+        let vcontraseña = "Peru2021";
+        let n=0;
+        let myString;
+        myForm=document.loginform;
+        //for(i=0;i<myForm.length-1;i++){
+        /*myString+=add_delimiters(myForm.elements[i].name,myForm.elements[i].value) */
+
+        
+        
+       /* myString ="Marco Antonio Geldres Milla";
+        
+        location.href = 'index.html' + '?' + myString   ;*/
+
+        /*function add_delimiters(n,v){
+        if(n!=""){ 
+        return n+"="+v+"&"
+        }
+        }*/
+        alert(myString);
+        //location.href = 'index.html' + '?' + escape(myString);
+        /*let txtName = document.getElementById("usuario");
+        let txtPassword = document.getElementById("password");
+        let txtError = document.getElementById("error");*/
+        //alert(txtName.value);
+        //alert(txtPassword.value);
+        /*validar usuario*/
+        if (vusuario === txtName.value) {
+          n++;
+        } 
+
+        if (vcontraseña === txtPassword.value) {
+          n++;
+        }
+        //alert(n);
+        if(n===2){
+            myString ="&Marco Antonio Geldres Milla&";
+            //txtError.value = "Bienvenido:" + myString;
+            //document.getElementById('error').innerHTML = "Bienvenido:" + myString;
+          
+            location.href = 'index.html' + '?' + escape(myString);
+           alert("Bienvenido:" + myString);
+        }else {
+         alert("El usuario o password es incorrecto, Verificar")  ;
+         document.getElementById('error').innerHTML  = "El usuario o password es incorrecto, Verificar";
+         txtName.scrollIntoView();
+        }
+        
+        return false;
+        }
+        
+        </script>
+</head>
+<body>
+
+        
+        <div id="contenedor">
+            <div id="central">
+                <div id="login">
+                    <div class="titulo">
+                        Bienvenido
+                    </div>
+                    <form   onsubmit="evaluarFormulario()">
+                        <input type="text" name="usuario" placeholder="Usuario" required="obligatorio" id="usuario"> 
+                        
+                        <input type="password" placeholder="Contraseña" name="password" required id="password">
+                        
+                        <button type="submit" title="Ingresar" name="Ingresar" onclick="enviarData()" >Login</button>
+                    </form>
+                    <div class="pie-form">
+                        <a href="#">¿Olvisate tu contraseña?</a>
+                        <a href="#">¿No tienes Cuenta? Registrate</a>
+                    </div>
+                    <div>
+                        <li><a id="error">Error</a>
+                           
+                        </li>
+                    </div>
+                </div>
+                <div class="inferior">
+                    <a href="index.html">Volver</a>
+                </div>
+            </div>
+        </div>
+            
+</body>
+</html>

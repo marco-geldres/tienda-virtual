@@ -1,0 +1,182 @@
+--inicio
+#inicio {
+
+  width: 775px;
+  height: 10px
+}
+.cliente {
+
+  width: 200px;
+  height: 10px;
+  display: inline;
+  position:realtive;
+}
+#barra1 { width: 200px; }
+#nav1 { width: 200px; }
+
+img.cyber{
+  width: 1200px; height: 300px;
+
+}
+img.contactenos{
+  width: 315px; height: 80px;
+
+}
+img.pequeña{
+    width: 50px; height: 50px;
+  }
+  img.mediana{
+    width: 100px; height: 100px;
+  }
+  img.grande{
+    width: 200px; height: 200px;
+  }
+  body{    
+    font: normal 16px "Lato", Arial, sans-serif;
+
+   
+}
+.smallerheadline{
+  font-size:  75%;
+}
+  #lista1 {
+    font-family:Arial;
+    font-weight:bold;
+    font-size:13px;
+    width: 200px;
+}
+#div1 {
+  font-family:Arial;
+  font-weight:bold;
+  font-size:13px;
+  width: 200px;
+}
+.separador {
+    color:gray;
+}
+#lista1 li {
+     display:inline;
+     padding-left:3px;
+     padding-right:3px;
+   
+}
+header nav ul{
+    display: flex;
+}
+
+
+ul {
+    list-style-type: none;
+    width: 1200px; height: 100px;
+  }  
+  li {
+
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+  
+  }
+  .page-header .header.content {
+    margin-bottom: 8px;
+}
+.page-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.menu{
+  width: 120px; height: 20px;
+  display:flex;
+  position:realtive;
+  font: normal 20px "Lato", Arial, sans-serif;
+
+  color:white;
+  border:black
+}
+.menuLista{
+  background-color: rgb(60, 0, 255);
+  list-style-type: none;
+  width: 1200px; height: 40px;
+}
+
+.categorias :hover{
+  width: 120px; height: 20px;
+  display:block;
+  position:realtive;
+  font: normal 25px "Lato", Arial, sans-serif;
+
+  color:white;
+  border:black
+}
+.categoriasLista{
+  background-color: rgb(60, 0, 255);
+  list-style-type: none;
+  width: 200px; height: 20px;
+}
+.listavertical{ float:none}
+
+.field {
+  display:flex;
+  position:realtive;
+
+  width:100%;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(22, 160, 133),
+   2px 2px 0 rgb(22, 160, 133),
+   3px 3px 0 rgb(22, 160, 133),
+   4px 4px 0 rgb(22, 160, 133),
+   5px 5px 0 rgb(22, 160, 133),
+   6px 6px 0 rgb(22, 160, 133),
+   7px 7px 0 rgb(22, 160, 133)
+  ;
+}
+
+.field1 {
+  display:flex;
+  position:realtive;
+  height: 80px;
+  width:500px;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(22, 160, 133),
+   2px 2px 0 rgb(22, 160, 133),
+   3px 3px 0 rgb(22, 160, 133),
+   4px 4px 0 rgb(22, 160, 133),
+   5px 5px 0 rgb(22, 160, 133),
+   6px 6px 0 rgb(22, 160, 133),
+   7px 7px 0 rgb(22, 160, 133)
+  ;
+}
+
+.field2 {
+  width:400px;
+  height: 80px;
+
+  ;
+}
+.field3 {
+  width:100px;
+  height: 80px;
+
+  ;
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex:1;
+  padding:0.6em;
+  border:0.2em solid rgb(26, 188, 156);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  color:white;
+  border:none;
+}
+.h2 { text-align: left; color:green}
