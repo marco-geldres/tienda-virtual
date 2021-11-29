@@ -158,8 +158,8 @@ ul {
 .field3 {
   width:100px;
   height: 80px;
-
-  ;
+  text-align: center;
+  
 }
 
 .field>input[type=text],
@@ -180,3 +180,18 @@ ul {
   border:none;
 }
 .h2 { text-align: left; color:green}
+
+
+#busqueda li
+{
+    display: inline;
+}
+
+#busqueda li img
+{
+    display: block;
+    width:200px;
+    height: 150px;
+    text-align: center;
+    padding-top: 80px;
+}
