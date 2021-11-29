@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Virtual</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="/css/estilos.css"> 
 </head>
 <script type="text/javascript">
      /*la funcion recorre la url y va recorriendo y haciendo un split para obtener los datos que se enviaron desde alli y se agrega a los atributos con el name txt*/
@@ -28,20 +28,20 @@
 <body  onload="obtenerData()">
     <header>
       <div >
-        <img src="images/cyber.png" alt="Cyber" title="Cyber Days" class="cyber">
+        <img src="/images/cyber.png" alt="Cyber" title="Cyber Days" class="cyber">
       </div>
       <div>
         <nav > 
             <ul >
-                <li ><span class="separador"></span><img src="images/logo_tienda.png" alt="Tienda" title="Tienda Virtual" class="field3"/> </li>
+                <li ><span class="separador"></span><img src="/images/logo_tienda.png" alt="Tienda" title="Tienda Virtual" class="field3"/> </li>
                 <li><div  id="searchform" class="field1">
                     <input type="text" id="searchterm" placeholder="Hola, ¿Qué estas buscando?" class="field2"/>
-                    <button type="button" id="search" class="field3"><img src="images/busqueda.png" title="Buscar" class="field3"  /></button>
+                    <button type="button" id="search" class="field3"><a href="#busqueda"><img src="/images/busqueda.png" title="Buscar" class="field3"  /> </a></button>
                   </div>
                 </li>
-                <li><span class="separador"></span><a href="login.html"><img src="images/login.png" alt="Tienda" title="Ingresar" class="field3"/></a></li>
-                <li ><span class="separador"></span><a href="#carrito"><img src="images/carrito.png" alt="Tienda" title="Carrito Compras" class="field3"/></a> </li>
-                <li><span class="separador"></span><a href="contactos.html"><img src="images/contactenos.png" alt="Tienda" title="Contactenos" class="contactenos"/></a></li>
+                <li><span class="separador"></span><a href="login.html"><img src="/images/login.png" alt="Tienda" title="Ingresar" class="field3"/></a></li>
+                <li ><span class="separador"></span><a href="carrito.html"><img src="/images/carrito.png" alt="Tienda" title="Carrito Compras" class="field3"/></a> </li>
+                <li><span class="separador"></span><a href="contactos.html"><img src="/images/contactenos.png" alt="Tienda" title="Contactenos" class="contactenos"/></a></li>
             </ul>
         </nav>
       </div>
@@ -82,18 +82,35 @@
             <br>
             <br>
             <br>
-            <div>
-                <a id="busqueda">
-                    <ul >
-                        <li><a class="categorias"></a>> Zapatillas</a></li>
-                        <li><a href="#Ofertas" class="categorias"> Polos</a></li>
-                        <li><a href=#Novedades class="categorias"> Pantalones</a></li>
-
-                    </ul> 
-                </a>
-            </div>
+            <ul id="busqueda">
+                <li><a href="enlace1.html" title=""><img src="images/celular.png" alt="descripcion" /> Galaxy S21 S/. 3500.00</a></li>
+                <li><a href="enlace2.html" title=""><img src="images/laptop.png" alt="descripcion" /> S/. 3500.00</a></li>
+                <li><a href="enlace3.html" title=""><img src="images/play.png" alt="descripcion" /> Enlace 3</a></li>
+                <li><a href="enlace3.html" title=""><img src="images/tv.png" alt="descripcion" /> Enlace 3</a></li>
+            <ul>
+                <br>
     </main>
 </body>
+<footer> 
+    <br>    
+    <div>       
+    <ul>
+        <li><a href="#"></a> <i class="fa fa-twitter-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+        <li><a href="#"><i class="fa fa-github-square"></i></a></li>
+    </ul>
+</div>
+    <div class="copy-right">
+        <div class="logo">
+            <img src="images/logo_tienda.png" alt="Seguros Rimac" title="Tienda virtual" class="field3"/>
+        </div>  
+        <p class="copy-right-text">    
+            © Tienda Virtual
+        </p>
+        </div>                        
+</footer>
 <script>
     function busqueda(){
         let busqueda = document.getElementById("nombre");
